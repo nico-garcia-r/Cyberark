@@ -310,6 +310,37 @@ class Cyberark_Auth:
     # #     r = requests.post(url, headers=headers, verify=self.verify_ssl)
     # #     return r.text
 
+def getPasswordCCP(host, port, app_id, safe=None, folder=None, object_=None, username=None):
+    query = "AppID=%s" % app_id
+    
+    if safe or folder or object_:
+        query += "&Query="
+    
+    if safe:
+        query += "Safe=%s&" % safe
+    if folder:
+        query += "Folder=%s&" % folder
+    if object_: 
+        query += "Object=%s&" % object_
+    if username:
+        query += "UserName=%s" % username
+    
+    get_password_url = "%s:%s/AIMWebService/api/Accounts?%s" % (
+        host,
+        port,
+        query
+    )
+    headers = {
+        "Content-Type": "application/json",
+        }
+    r = requests.get(
+        get_password_url,
+        headers=headers
+    )
+    
+    return r.json()
+
+
     
 module = GetParams("module")
 
@@ -516,6 +547,32 @@ try:
         try:
             password = cyberark.getPassword(
                 account_id=account_id
+            )
+            SetVar(result, password)
+            print("Password obtenida")
+        except Exception as e:
+            PrintException()
+            raise e
+    
+    if module == "get_password_ccp":
+        host = GetParams("host")
+        port = GetParams("port")
+        app_id = GetParams("app_id")
+        safe = GetParams("safe")
+        folder = GetParams("folder")
+        object_ = GetParams("object_")
+        username = GetParams("username")
+        result = GetParams("result")
+        
+        try:
+            password = getPasswordCCP(
+                host=host,
+                port=port,
+                app_id=app_id,
+                safe=safe,
+                folder=folder,
+                object_=object_,
+                username=username
             )
             SetVar(result, password)
             print("Password obtenida")
