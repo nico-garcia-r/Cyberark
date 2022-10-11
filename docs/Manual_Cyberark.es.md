@@ -2,7 +2,7 @@
   
 Módulo para conectarse a Cyberark y manejar contraseñas  
 
-*Read this in other languages: [English](Manual_Cyberark.md), [Portugues](Manual_Cyberark.pr.md), [Español](Manual_Cyberark.es.md).*
+
   
 ![banner](imgs/Banner_Cyberark.png)
 ## Como instalar este módulo
