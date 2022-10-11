@@ -49,6 +49,8 @@ Generate a new password for an existing account. The password is generated accor
 12. Get password value  
 Retrieve the password or SSH key of an existing account that is identified by its Account ID.  
 
+13. Get password from Central Credential Provider
+Enable applications to retrieve secrets from the Central Credential Provider
 
 
 

@@ -1339,19 +1339,19 @@
         },
         {
             "en": {
-                "title": "Get password with Central Credential Provider",
+                "title": "Get password from Central Credential Provider",
                 "description": "Enable applications to retrieve secrets from the Central Credential Provider",
                 "title_options": "Select Option",
                 "options": null
             },
             "es": {
-                "title": "Obtener contraseña con Central Credential Provider",
+                "title": "Obtener contraseña del Central Credential Provider",
                 "description": "Permite a las aplicaciones recuperar secretos del Central Credential Provider",
                 "title_options": "Seleccione una opción",
                 "options": null
             },
             "pr": {
-                "title": "Obter senha com Central Credential Provider",
+                "title": "Obter senha do Central Credential Provider",
                 "description": "Permite que aplicativos recuperem segredos do Central Credential Provider",
                 "title_options": "Selecione uma opção",
                 "options": null

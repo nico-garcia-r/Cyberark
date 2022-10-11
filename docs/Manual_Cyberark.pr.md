@@ -121,3 +121,17 @@ Recupere a senha ou a chave SSH de uma conta existente identificada pelo ID da c
 | --- | --- | --- |
 |ID da conta|ID da conta que será excluída|123456|
 |Atribuir resultado a variável|Atribuir resultado a variável|result|
+
+### Obter senha do Central Credential Provider
+  
+Permite que aplicativos recuperem segredos do Central Credential Provider
+|Parâmetros|Descrição|exemplo|
+| --- | --- | --- |
+|Host|Host do servidor|100.10.2|
+|Porta|Porta do servidor|22|
+|AppID|Especifica o ID único do aplicativo que emite a solicitação de senha.|BillingApp|
+|Nome do Safe|Especifica o nome do Safe onde a senha é armazenada.|SAFE-NAME|
+|Pasta|Especifica a pasta onde a senha é armazenada.|BILLING|
+|Objeto|Especifica o nome do objeto senha a recuperar.|MonthlyBilling|
+|Nome de Usuário|Define critérios de pesquisa de acordo com a propriedade de conta de nome de usuário atribuída.|user|
+|Atribuir resultado a variável|Atribuir resultado a variável|result|
