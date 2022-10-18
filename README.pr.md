@@ -49,6 +49,8 @@ Gera uma nova senha para uma conta existente. A senha é gerada de acordo com a 
 12. Obter o valor da senha  
 Recupere a senha ou a chave SSH de uma conta existente identificada pelo ID da conta.  
 
+13. Obter senha do Central Credential Provider
+Permite que aplicativos recuperem segredos do Central Credential Provider
 
 
 

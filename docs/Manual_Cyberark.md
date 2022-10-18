@@ -121,3 +121,17 @@ Retrieve the password or SSH key of an existing account that is identified by it
 | --- | --- | --- |
 |Account ID|Account ID that will be deleted|123456|
 |Assign result to variable|Assign result to variable|result|
+
+### Get password from Central Credential Provider
+  
+Enable applications to retrieve secrets from the Central Credential Provider
+|Parameters|Description|example|
+| --- | --- | --- |
+|Host|Server host|100.10.2|
+|Port|Server port|22|
+|AppID|Specifies the unique ID of the application issuing the password request.|BillingApp|
+|Safe name|Specifies the name of the Safe where the password is stored.|SAFE-NAME|
+|Folder|Specifies the folder where the password is stored.|BILLING|
+|Object|Specifies the name of the password object to retrieve.|MonthlyBilling|
+|User Name|Defines search criteria according to the assigned username account property.|user|
+|Assign result to variable|Assign result to variable|result|

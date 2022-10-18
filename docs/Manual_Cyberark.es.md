@@ -1,8 +1,8 @@
 # Cyberark
   
-Módulo para conectarse a Cyberark y manejar contraseñas 
+Módulo para conectarse a Cyberark y manejar contraseñas  
 
-*Read this in other languages: [English](Manual_Cyberark.md), [Portugues](Manual_Cyberark.pr.md), [Español](Manual_Cyberark.es.md).*
+
   
 ![banner](imgs/Banner_Cyberark.png)
 ## Como instalar este módulo
@@ -120,4 +120,18 @@ Recupera la contraseña o la clave SSH de una cuenta existente identificada por 
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
 |ID de la cuenta|ID de la cuenta que será eliminada|123456|
+|Asignar resultado a variable|Asignar resultado a variable|result|
+
+### Obtener contraseña del Central Credential Provider
+  
+Permite a las aplicaciones recuperar secretos del Central Credential Provider
+|Parámetros|Descripción|ejemplo|
+| --- | --- | --- |
+|Host|Host del servidor|100.10.2|
+|Puerto|Puerto del servidor|22|
+|AppID|Especifica el ID único de la aplicación que emite la solicitud de contraseña.|BillingApp|
+|Nombre de la Caja fuerte|Especifica el nombre de la caja fuerte donde se almacena la contraseña.|SAFE-NAME|
+|Carpeta|Especifica la carpeta donde se almacena la contraseña.|BILLING|
+|Objeto|Especifica el nombre del objeto contraseña a recuperar.|MonthlyBilling|
+|Nombre de Usuario|Define criterios de búsqueda según la propiedad de cuenta de nombre de usuario asignada.|user|
 |Asignar resultado a variable|Asignar resultado a variable|result|
