@@ -49,6 +49,8 @@ Genera una nueva contraseña para una cuenta existente. La contraseña se genera
 12. Obtener el valor de la contraseña  
 Recupera la contraseña o la clave SSH de una cuenta existente identificada por su ID de cuenta.  
 
+13.  Obtener contraseña del Central Credential Provider
+Permite a las aplicaciones recuperar secretos del Central Credential Provider
 
 
 
