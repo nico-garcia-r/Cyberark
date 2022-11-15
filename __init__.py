@@ -285,45 +285,19 @@ class Cyberark_Auth:
             verify=self.verify_ssl
         )
         return r.json()
-    
-    # # def getPassword(self, account_id):
-    # #     url = "%s/PasswordVault/API/Accounts/%s/Password/Retrieve/" % (
-    # #         self.cyberark_url,
-    # #         account_id
-    # #     )
-    # #     headers = {
-    # #         "Content-Type": "application/json",
-    # #         "Authorization": self.cert
-    # #     }
-    # #     r = requests.get(url, headers=headers, verify=self.verify_ssl)
-    # #     return r.text
-    
-    # # def generatePassword(self, account_id):
-    # #     url = "%s/PasswordVault/API/Accounts/%s/Password/Generate" % (
-    # #         self.cyberark_url,
-    # #         account_id
-    # #     )
-    # #     headers = {
-    # #         "Content-Type": "application/json",
-    # #         "Authorization": self.cert
-    # #     }
-    # #     r = requests.post(url, headers=headers, verify=self.verify_ssl)
-    # #     return r.text
+
 
 def getPasswordCCP(host, port, app_id, safe=None, folder=None, object_=None, username=None):
     query = "AppID=%s" % app_id
     
-    if safe or folder or object_:
-        query += "&Query="
-    
     if safe:
-        query += "Safe=%s&" % safe
+        query += "&Safe=%s" % safe
     if folder:
-        query += "Folder=%s&" % folder
+        query += "&Folder=%s" % folder
     if object_: 
-        query += "Object=%s&" % object_
+        query += "&Object=%s" % object_
     if username:
-        query += "UserName=%s" % username
+        query += "&UserName=%s" % username
     
     get_password_url = "%s:%s/AIMWebService/api/Accounts?%s" % (
         host,
