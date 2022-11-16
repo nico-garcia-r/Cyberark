@@ -127,7 +127,7 @@ Retrieve the password or SSH key of an existing account that is identified by it
 Enable applications to retrieve secrets from the Central Credential Provider
 |Parameters|Description|example|
 | --- | --- | --- |
-|Host|Server host|100.10.2|
+|URL|Central Credential Provider URL|100.10.2|
 |Port|Server port|22|
 |AppID|Specifies the unique ID of the application issuing the password request.|BillingApp|
 |Safe name|Specifies the name of the Safe where the password is stored.|SAFE-NAME|
