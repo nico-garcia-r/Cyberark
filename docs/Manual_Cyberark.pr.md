@@ -127,7 +127,7 @@ Recupere a senha ou a chave SSH de uma conta existente identificada pelo ID da c
 Permite que aplicativos recuperem segredos do Central Credential Provider
 |Parâmetros|Descrição|exemplo|
 | --- | --- | --- |
-|Host|Host do servidor|100.10.2|
+|URL|URL do Central Credential Provider|100.10.2|
 |Porta|Porta do servidor|22|
 |AppID|Especifica o ID único do aplicativo que emite a solicitação de senha.|BillingApp|
 |Nome do Safe|Especifica o nome do Safe onde a senha é armazenada.|SAFE-NAME|

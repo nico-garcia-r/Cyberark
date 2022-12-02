@@ -127,7 +127,7 @@ Recupera la contraseña o la clave SSH de una cuenta existente identificada por 
 Permite a las aplicaciones recuperar secretos del Central Credential Provider
 |Parámetros|Descripción|ejemplo|
 | --- | --- | --- |
-|Host|Host del servidor|100.10.2|
+|URL|URL del Central Credential Provider|100.10.2|
 |Puerto|Puerto del servidor|22|
 |AppID|Especifica el ID único de la aplicación que emite la solicitud de contraseña.|BillingApp|
 |Nombre de la Caja fuerte|Especifica el nombre de la caja fuerte donde se almacena la contraseña.|SAFE-NAME|
